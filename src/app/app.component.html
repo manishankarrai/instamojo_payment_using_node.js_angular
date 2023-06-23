@@ -1,0 +1,29 @@
+<h1 style="text-align: center; background-color: brown; color: white; padding: 5px;">
+  Welcome</h1>
+
+   <!-- <h2 *ngIf="message"> {{message}} </h2>
+   <h4 *ngIf="res_data"> name : {{res_data.name}} , age : {{res_data.age}}</h4> 
+   <div  class="main" *ngFor="let data of alluser" >
+      <p  *ngIf="alluser">name: {{data.name}} , age: {{data.age}}</p>
+   </div>
+<button (click)="getname()" style="background-color: black;color: white;
+ cursor: pointer; padding: 5px;">Get Name</button> 
+<br>
+<p></p>
+<button (click)="postdata()" style="background-color: palevioletred; color: white; cursor: pointer; 
+padding: 5px;"> post name </button>
+<p></p> <p></p>
+<button (click)="postdata2()" style="background-color: rgb(14, 139, 24); color: white; cursor: pointer; 
+padding: 5px;"> post name 2</button>
+<p></p> <p></p>
+<button (click)="getalluser()" style="background-color: rgb(15, 73, 7); 
+color: white; cursor: pointer; padding: 5px;"> getall user </button>
+
+<p></p><p></p>
+<button (click)="reset()" style="background-color: red; color: white; padding: 10px; cursor: pointer;">Reset All </button> -->
+
+<form  [formGroup]="payment" (ngSubmit)="reqpayment()">
+   <input type="text" formControlName="purpose" placeholder="purpose">
+   <input type="number" formControlName="amount" placeholder="amount">
+   <input type="submit">
+</form>
