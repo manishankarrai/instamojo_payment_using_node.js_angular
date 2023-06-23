@@ -1,0 +1,13 @@
+{
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "helmet": "^7.0.0",
+    "instamojo-nodejs": "^0.0.5",
+    "mongoose": "^7.2.3",
+    "url": "^0.11.1"
+  }
+}

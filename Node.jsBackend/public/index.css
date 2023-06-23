@@ -1,0 +1,138 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: red;
+}
+label {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(41, 18, 126);
+    padding: 3px;
+}
+textarea {
+    width: 90%;
+    min-height: 140px;
+    padding: 20px;
+    border: 1px solid red;
+    font-size: 16px;
+    margin-top: 20px;
+}
+select {
+    width: 90%;
+    height: 30px;
+    border: 1px solid red;
+    margin-top: 16px;
+    padding-left: 20px;
+
+}
+#submitbtn {
+    display: block;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    align-items: center;
+    border: none;
+}
+input {
+    width: 90%;
+    min-height: 30px;
+    padding: 5px;
+    border: 1px solid red;
+    font-size: 16px;
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+a {
+    display: block;
+    width: 200px;
+    height: auto;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 4px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+a:hover {
+    background-color: blue;
+    color: white
+}
+ /* alldata page */
+.section_s {
+    background-color: rgb(230, 220, 220);
+    width: auto;
+    height: auto;
+}
+.main_content {
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    background-color: white;
+    padding: 40px;
+}
+.main_content h1 {
+   color: red;
+   font-size: 22px;
+}
+.main_content h2 {
+    color: blue;
+    font-size: 20px;
+}
+.main_content p {
+    color: black;
+    font-size: 18px;
+}
+
+/* submission page */
+.submission{
+    padding: 40px;
+}
+
+.form_page {
+    padding: 40px;
+}
+.index_page {
+    padding: 40px;
+}
+.databyid_page {
+    padding: 40px;
+    
+}
+.error_page {
+    padding: 40px;
+}
+.success_page {
+    padding: 40px;
+}
+
+/* //code snippet testing */
+
+.code-container {
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    cursor: pointer;
+}

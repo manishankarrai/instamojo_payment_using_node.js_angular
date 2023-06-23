@@ -1,0 +1,48 @@
+-----------------------------------   How can I remove a specific item from an array in JavaScript?
+
+let arr = [11,22,33,44,'mango' , 'banana'];
+  console.log("original array" , arr);
+//if i want to remove mango form array
+ //first find index of array element that i want to remove 
+let indexOfMango = arr.indexOf('mango');
+console.log("index of mango " , indexOfMango);
+
+//then use splice method to remove that element 
+arr.splice(indexOfMango , 1);
+
+console.log("arr remain item ",arr);
+
+
+--------------------------------
+What does "use strict" do in JavaScript, and what is the reasoning behind it?
+
+"use strict" is a kind of property that define behaviour of your page . after using of 
+"use strict " you cant able to declare a variable twice and 
+
+
+
+
+
+---------------how to move to anotherpage using JavaScript
+// window.location
+window.location.replace('http://www.example.com')
+window.location.assign('http://www.example.com')
+window.location.href = 'http://www.example.com'
+document.location.href = '/path'
+
+// window.history
+window.history.back()
+window.history.go(-1)
+
+// window.navigate; ONLY for old versions of Internet Explorer
+window.navigate('top.jsp')
+
+
+// Probably no bueno
+self.location = 'http://www.example.com';
+top.location = 'http://www.example.com';
+
+// jQuery
+$(location).attr('href','http://www.example.com')
+$(window).attr('location','http://www.example.com')
+$(location).prop('href', 'http://www.example.com')

@@ -1,0 +1,38 @@
+<div class="form_page">
+    <form method="POST" action="/submit">
+    <label for="">Language</label>
+    <select name="language" required>
+        <option value="javascript">javascript</option>
+        <option value="node.js">node.js</option>
+        <option value="mongodb">mongodb</option>
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="angular">angular</option>
+        <option value="typescript">typescript</option>
+        <option value="sql">sql</option>
+    </select>
+    <label for="title">Title</label>
+    <input type="text" name="title" required>
+    <label for="content">Content:</label>
+    <textarea type="text" name="content" required></textarea>
+    <label for="title">Explain:</label>
+    <textarea type="text" name="explain" required> </textarea>
+
+    <button type="submit" id="submitbtn">Submit</button>
+</form>
+
+{{!-- language: String,
+title: String,
+content: String,
+explain: String,
+author: String,
+author_id: String,
+likes: String,
+comment: {
+type: comment_schema,
+} --}}
+<br>
+<br>
+<a href="/"> Go to Home</a>
+<a href="/getalldata">See all data</a>
+</div>

@@ -1,0 +1,41 @@
+<h1> &nbsp; &nbsp; All Existed Data</h1>
+
+
+<div class="section_s">
+    {{#each result}}
+    <div class="main_content">
+        <h1>Language: &nbsp; {{this.language}}</h1>
+        <h2>Title: &nbsp;{{this.title}}</h2>
+        {{!-- <p>Content: &nbsp;{{this.content}}</p> --}}
+
+        <script>
+            function copyToClipboard(codeContainer) {
+                const code = codeContainer.querySelector('code').innerText;
+                const tempTextarea = document.createElement('textarea');
+                tempTextarea.value = code;
+                document.body.appendChild(tempTextarea);
+                tempTextarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempTextarea);
+                alert('Code copied to clipboard!');
+            }
+        </script>
+
+        <div class="code-container">
+            <p>This is a code snippet:</p>
+            <pre><code>
+           {{this.content}}
+        </code></pre>
+            <div class="copy-button" onclick="copyToClipboard(this.parentNode)">
+                Copy
+            </div>
+        </div>
+
+        <p>Explain: &nbsp;{{this.explain}}</p>
+        <p>Likes: &nbsp;{{this.likes}}</p>
+        <p>Author: &nbsp;{{this.author}}</p>
+        <a href="/getdatabyid/{{this._id}}" style="background-color: rgb(15, 15, 128);">Edit</a>
+        <a href="/deletedata/{{this._id}}" >Delete</a>
+    </div>
+    {{/each}}
+</div>
